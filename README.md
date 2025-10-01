@@ -90,7 +90,5 @@ error_reporting(E_ALL);
 If you followed an external tutorial when building this project, add the link here:
 
 [Add tutorial link here]
-
+https://www.youtube.com/watch?v=gCo6JqGMi30
 ---
-
-If you want, I can also add a minimal `TASKS.md` listing the six small tasks we discussed. Tell me if you want that created now.
