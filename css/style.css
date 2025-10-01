@@ -1,0 +1,182 @@
+/* ============ GLOBAL ============ */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #333; /* dark background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============ NAVBAR ============ */
+nav {
+  background: #001f3f; /* navy blue */
+  padding: 15px 0;
+}
+
+nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* gold on hover */
+}
+
+nav ul li a.active {
+  color: #ffcc00; /* highlight current page */
+  border-bottom: 2px solid #ffcc00; /* underline effect */
+  padding-bottom: 3px; /* space for underline */
+}
+
+/* ============ COMBINED INTRO + CATEGORIES ============ */
+.home-intro,
+.index-categories {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+/* top part (intro) */
+.home-intro {
+  margin-top: 40px;
+  margin-bottom: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 1px solid #eee; /* subtle divider */
+}
+
+.home-intro h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.home-intro p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* bottom part (categories) */
+.index-categories {
+  margin-top: 0;
+  margin-bottom: 60px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.index-categories h2 {
+  margin: 30px 0 20px;
+  font-size: 22px;
+}
+
+/* categories grid */
+.index-categories-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.index-categories-list div {
+  background: #ddd;
+  padding: 40px 20px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.index-categories-list div:hover {
+  background: #ccc;
+}
+
+.index-categories-list h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ============ FORMS (LOGIN & SIGNUP) ============ */
+form {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* ============ SIGNUP FORM SECTION ============ */
+.signup-form {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.signup-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #001f3f; /* navy blue heading */
+}
+
+.signup-form p {
+  color: red;
+  margin-top: 10px;
+}
